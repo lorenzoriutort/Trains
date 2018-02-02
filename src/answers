@@ -1,0 +1,52 @@
+1.  Define the function of a constructor. [2]
+A constructor is a block of code that's called when an instance of an object is created in the code.
+A constructor is method used to initialize an instance of a class and is specific to that class.
+
+2. Outline the advantages of polymorphism, using the RollingStock class as an example. [3]
+Polymorphism is the ability of a class to take on multiple objects through inheritance.
+For example the Wagon class extends the RollingStock by inheriting its methods and instance variables.
+
+4. Construct a method getNumberOfWagons(), part of the Train class, that returns the
+number of wagons currently coupled to the train. [2]
+
+5. Construct the removeWagon() method that will remove one wagon from a train and
+return the removed object. Include appropriate error checking. [5]
+
+6. Outline one advantage of using standard library collections. [2]
+You don't have to define basic functions such as a for-loop or an if statement which help you code.
+It also provides a framework for organizing data that is reusable.
+
+7. Describe two ways in which programming by a team differs from programming by an
+individual working alone. [4]
+(a) Programming with a team is faster and more efficient.
+(b) Working alone may be less confusing to write code between multiple people.
+
+8.  State the appropriate data type to be used in the Address class to store
+(i) the street name; [1]
+string
+(ii) the building number; [1]
+int
+(iii) an indication of whether or not this is a business address. [1]
+boolean
+
+9. Identify the changes to the Parcel class that will be needed to make use of the new
+Address class. [3]
+
+10. Outline how these two new classes can be created with minimal duplication of code. [3]
+By having an Address class and having origin and destination extend it.
+
+11. (i) Draw the mEngines array after the code fragment has been executed. [2]
+(ii) State the value of mEngineCount after the code fragment has been executed. [1]
+(iii) Draw the mWagons array after both the code fragment above and the code fragment
+below have been executed. [2]
+
+12. Construct the getWeight() method in the Wagon class that returns the total combined
+weight of the parcels currently in the wagon and the wagon itself. [4]
+
+13. Construct the getWeight() method in the Train class that returns the total combined
+weight of all the parcels, engines and wagons in a train. [4]
+
+14. Explain why having a getWeight() method in both the Train and Wagon classes
+does not cause a compiler error, even though the Train class does not inherit from the
+RollingStock class. [2]
+Because the Train class is calling the getWeight() function from an instance it only calls to one class.
